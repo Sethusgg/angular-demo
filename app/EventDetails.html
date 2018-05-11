@@ -3,22 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Event Registration</title>
-    <href="/Users/sethus/Sites/DemoApp/app/css/bootstrap.min.css"link rel="stylesheet" type="text/html">
-    <href="/Users/sethus/Sites/DemoApp/app/css/app.css" link rel="stylesheet" type="text/html" >
+    <link href="css/bootstrap.min.css"  rel="stylesheet">
+    <link href="css/app.css"  rel="stylesheet" >
 </head>
 <body>
-    <div class='container'>
+    <div class="container">
         <div class="navbar">
             <div class="navbar-inner">
                 <ul class="nav">
-
+                    <li>Nav item</li>
+                    <li>Nav item</li>
+                    <li>Nav item</li>
+                    <li>Nav item</li>
                 </ul>
             </div>
         </div>
         <div ng-controller='EventController' style='padding-left:20px; padding-right:20px'>
             <img ng-src='{{event.imageUrl}}' alt='{{event.name}}' />
             <div class='row'>
-                <div class='spann11'>
+                <div class='span1'>
                     <h2>{{event.name}}</h2>
                 </div>
             </div>
