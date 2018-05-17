@@ -4,10 +4,8 @@
 eventsApp.controller('EditEventController',
     function EditEventController($scope, eventData){
 
-      $scope.event = {
-        name:"New Event",
-        date:"01/01/2019"
-      };
+      $scope.event = {};
+      
         
         $scope.saveEvent = function (event, newEventForm) {
             if(newEventForm.$valid){
