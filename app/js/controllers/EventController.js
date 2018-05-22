@@ -2,11 +2,8 @@
 eventsApp.controller('EventController',
 function EventController($scope, eventData, $anchorScroll){
     $scope.sortorder = 'name';
-    eventData.getEvent()
-        .$promise
-        .then(function(event) { $scope.event = event; })
-        .catch(function(response) { $console.log(response);}
-    );
+    $scope.event = eventData.getEvent();
+
     $scope.upVoteSession = function(session){
         session.upVoteCount++;
     };
